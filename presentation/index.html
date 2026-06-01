@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Accident Analysis System — Presentation</title>
+    <meta name="description" content="Project presentation for the Traffic Accident Analysis System">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Pagination Dots -->
+    <nav id="pagination" aria-label="Slide navigation"></nav>
+
+    <!-- Slide 1: Title -->
+    <section class="slide slide-title" id="slide-1">
+        <div class="bg-animation">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        <div class="slide-content">
+            <span class="badge animate-item">🚦 Mini Project Presentation</span>
+            <h1 class="hero-title animate-item">Traffic Accident<br><span class="gradient-text">Analysis System</span>
+            </h1>
+            <p class="hero-sub animate-item">A data-driven approach to road safety analysis and visualization</p>
+            <div class="team-info animate-item">
+                <p><strong>Prepared by:</strong> Project Team</p>
+                <p>Department of Computer Science</p>
+            </div>
+            <div class="scroll-hint animate-item">↓ Scroll or press arrow keys ↓</div>
+        </div>
+    </section>
+
+    <!-- Slide 2: Introduction -->
+    <section class="slide" id="slide-2">
+        <div class="slide-content">
+            <span class="slide-number">01</span>
+            <h2 class="slide-heading animate-item">Introduction</h2>
+            <div class="content-grid">
+                <div class="content-card animate-item">
+                    <div class="card-icon">🚗</div>
+                    <h3>The Problem</h3>
+                    <p>Traffic accidents are a leading cause of death and injury worldwide, with millions affected
+                        annually.</p>
+                </div>
+                <div class="content-card animate-item">
+                    <div class="card-icon">📊</div>
+                    <h3>Data Gap</h3>
+                    <p>While accident data is collected, it often remains unstructured and underutilized for meaningful
+                        analysis.</p>
+                </div>
+                <div class="content-card animate-item">
+                    <div class="card-icon">💡</div>
+                    <h3>Our Solution</h3>
+                    <p>An intelligent system that transforms raw accident data into actionable insights and visual
+                        dashboards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 3: Problem Statement -->
+    <section class="slide" id="slide-3">
+        <div class="slide-content">
+            <span class="slide-number">02</span>
+            <h2 class="slide-heading animate-item">Problem Statement</h2>
+            <div class="text-block animate-item">
+                <div class="highlight-box danger">
+                    <h3>⚠️ Current Challenges</h3>
+                    <ul>
+                        <li>Accident data is scattered and not centrally analyzed</li>
+                        <li>No systematic identification of accident-prone zones</li>
+                        <li>Lack of visual tools for decision-makers</li>
+                        <li>Manual reporting leads to delayed insights</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 4: Motivation & Scope -->
+    <section class="slide" id="slide-4">
+        <div class="slide-content">
+            <span class="slide-number">03</span>
+            <h2 class="slide-heading animate-item">Motivation & Scope</h2>
+            <div class="two-col">
+                <div class="col animate-item">
+                    <h3 class="col-title">🎯 Why This Project</h3>
+                    <ul class="styled-list">
+                        <li>Save lives through data-driven decisions</li>
+                        <li>Empower traffic authorities with insights</li>
+                        <li>Identify patterns hidden in raw data</li>
+                        <li>Support evidence-based road safety policy</li>
+                    </ul>
+                </div>
+                <div class="col animate-item">
+                    <h3 class="col-title">📐 Scope</h3>
+                    <ul class="styled-list">
+                        <li>Analysis of historical accident data</li>
+                        <li>Interactive visualizations & dashboards</li>
+                        <li>Black spot identification</li>
+                        <li>Report generation</li>
+                    </ul>
+                    <div class="note">⚠️ Not real-time accident detection</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 5: Objectives -->
+    <section class="slide" id="slide-5">
+        <div class="slide-content">
+            <span class="slide-number">04</span>
+            <h2 class="slide-heading animate-item">Objectives</h2>
+            <div class="objectives-grid">
+                <div class="objective-item animate-item"><span class="obj-num">01</span>
+                    <p>Organize and clean accident datasets</p>
+                </div>
+                <div class="objective-item animate-item"><span class="obj-num">02</span>
+                    <p>Perform descriptive and frequency analysis</p>
+                </div>
+                <div class="objective-item animate-item"><span class="obj-num">03</span>
+                    <p>Identify accident-prone zones (black spots)</p>
+                </div>
+                <div class="objective-item animate-item"><span class="obj-num">04</span>
+                    <p>Visualize patterns through interactive charts</p>
+                </div>
+                <div class="objective-item animate-item"><span class="obj-num">05</span>
+                    <p>Generate exportable summary reports</p>
+                </div>
+                <div class="objective-item animate-item"><span class="obj-num">06</span>
+                    <p>Provide a user-friendly dashboard interface</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 6: Methodology -->
+    <section class="slide" id="slide-6">
+        <div class="slide-content">
+            <span class="slide-number">05</span>
+            <h2 class="slide-heading animate-item">Methodology</h2>
+            <div class="flow-diagram animate-item">
+                <div class="flow-step"><span class="flow-icon">📂</span><span>Data Collection</span></div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step"><span class="flow-icon">🧹</span><span>Pre-processing</span></div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step"><span class="flow-icon">📊</span><span>Analysis</span></div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step"><span class="flow-icon">📈</span><span>Visualization</span></div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step"><span class="flow-icon">📄</span><span>Reporting</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 7: System Architecture -->
+    <section class="slide" id="slide-7">
+        <div class="slide-content">
+            <span class="slide-number">06</span>
+            <h2 class="slide-heading animate-item">System Architecture</h2>
+            <div class="arch-diagram animate-item">
+                <div class="arch-layer" style="--layer-color: #70a1ff">
+                    <span class="arch-label">Data Source</span>
+                    <span class="arch-detail">CSV / Excel / Database</span>
+                </div>
+                <div class="arch-connector">⬇</div>
+                <div class="arch-layer" style="--layer-color: #a29bfe">
+                    <span class="arch-label">Data Input Module</span>
+                    <span class="arch-detail">Upload, Validate, Preview</span>
+                </div>
+                <div class="arch-connector">⬇</div>
+                <div class="arch-layer" style="--layer-color: #ffa502">
+                    <span class="arch-label">Pre-processing Module</span>
+                    <span class="arch-detail">Clean, Normalize, Transform</span>
+                </div>
+                <div class="arch-connector">⬇</div>
+                <div class="arch-layer" style="--layer-color: #2ed573">
+                    <span class="arch-label">Analysis Module</span>
+                    <span class="arch-detail">Statistics, Trends, Clustering</span>
+                </div>
+                <div class="arch-connector">⬇</div>
+                <div class="arch-layer" style="--layer-color: #ff4757">
+                    <span class="arch-label">Visualization & Dashboard</span>
+                    <span class="arch-detail">Charts, Maps, Reports</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 8: Algorithms -->
+    <section class="slide" id="slide-8">
+        <div class="slide-content">
+            <span class="slide-number">07</span>
+            <h2 class="slide-heading animate-item">Algorithms Used</h2>
+            <div class="content-grid">
+                <div class="content-card animate-item">
+                    <div class="card-icon">🧹</div>
+                    <h3>Data Cleaning</h3>
+                    <p>Remove duplicates, handle missing values, normalize formats</p>
+                </div>
+                <div class="content-card animate-item">
+                    <div class="card-icon">📊</div>
+                    <h3>Statistical Analysis</h3>
+                    <p>Descriptive statistics, frequency distribution, correlation analysis</p>
+                </div>
+                <div class="content-card animate-item">
+                    <div class="card-icon">📈</div>
+                    <h3>Time Series Analysis</h3>
+                    <p>Trend identification across months, years, and hours of day</p>
+                </div>
+                <div class="content-card animate-item">
+                    <div class="card-icon">🎯</div>
+                    <h3>K-Means Clustering</h3>
+                    <p>Identify accident black spots using geographic coordinates (optional)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 9: Modules -->
+    <section class="slide" id="slide-9">
+        <div class="slide-content">
+            <span class="slide-number">08</span>
+            <h2 class="slide-heading animate-item">System Modules</h2>
+            <div class="modules-grid animate-item">
+                <div class="module-card">
+                    <div class="module-num">1</div>
+                    <h4>Data Input</h4>
+                    <p>Upload CSV/Excel, validate format, preview data</p>
+                </div>
+                <div class="module-card">
+                    <div class="module-num">2</div>
+                    <h4>Pre-processing</h4>
+                    <p>Handle missing values, remove duplicates, normalize</p>
+                </div>
+                <div class="module-card">
+                    <div class="module-num">3</div>
+                    <h4>Analysis</h4>
+                    <p>Statistics, frequency analysis, trend detection</p>
+                </div>
+                <div class="module-card">
+                    <div class="module-num">4</div>
+                    <h4>Visualization</h4>
+                    <p>Bar, line, pie charts, heatmaps, maps</p>
+                </div>
+                <div class="module-card">
+                    <div class="module-num">5</div>
+                    <h4>Reporting</h4>
+                    <p>Summary reports, PDF/CSV export</p>
+                </div>
+                <div class="module-card">
+                    <div class="module-num">6</div>
+                    <h4>User Interface</h4>
+                    <p>Dashboard, filters, interactive controls</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 10: Tools & Technologies -->
+    <section class="slide" id="slide-10">
+        <div class="slide-content">
+            <span class="slide-number">09</span>
+            <h2 class="slide-heading animate-item">Tools & Technologies</h2>
+            <div class="tech-grid animate-item">
+                <div class="tech-item"><span class="tech-icon">🐍</span><span>Python</span></div>
+                <div class="tech-item"><span class="tech-icon">🐼</span><span>Pandas</span></div>
+                <div class="tech-item"><span class="tech-icon">📊</span><span>Matplotlib</span></div>
+                <div class="tech-item"><span class="tech-icon">🎨</span><span>Seaborn</span></div>
+                <div class="tech-item"><span class="tech-icon">🌊</span><span>Streamlit</span></div>
+                <div class="tech-item"><span class="tech-icon">🗺️</span><span>Folium</span></div>
+                <div class="tech-item"><span class="tech-icon">⚛️</span><span>React</span></div>
+                <div class="tech-item"><span class="tech-icon">🎯</span><span>Recharts</span></div>
+                <div class="tech-item"><span class="tech-icon">🍃</span><span>Leaflet</span></div>
+                <div class="tech-item"><span class="tech-icon">💨</span><span>Tailwind CSS</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 11: Results -->
+    <section class="slide" id="slide-11">
+        <div class="slide-content">
+            <span class="slide-number">10</span>
+            <h2 class="slide-heading animate-item">Results & Output</h2>
+            <div class="results-grid animate-item">
+                <div class="result-card">
+                    <h4>📊 Cleaned Dataset</h4>
+                    <p>500+ preprocessed records ready for analysis</p>
+                </div>
+                <div class="result-card">
+                    <h4>📈 Interactive Charts</h4>
+                    <p>8+ chart types: bar, line, pie, heatmap, area</p>
+                </div>
+                <div class="result-card">
+                    <h4>🗺️ Accident Map</h4>
+                    <p>Geographic visualization with severity markers</p>
+                </div>
+                <div class="result-card">
+                    <h4>💡 Auto Insights</h4>
+                    <p>System-generated key findings and patterns</p>
+                </div>
+                <div class="result-card">
+                    <h4>📄 Reports</h4>
+                    <p>Downloadable CSV and summary reports</p>
+                </div>
+                <div class="result-card">
+                    <h4>🎨 Dashboard UI</h4>
+                    <p>Modern, responsive, dark-themed interface</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 12: Challenges -->
+    <section class="slide" id="slide-12">
+        <div class="slide-content">
+            <span class="slide-number">11</span>
+            <h2 class="slide-heading animate-item">Challenges & Limitations</h2>
+            <div class="text-block animate-item">
+                <div class="highlight-box warning">
+                    <ul>
+                        <li>No real-time accident tracking capability</li>
+                        <li>System accuracy depends on dataset quality</li>
+                        <li>Limited prediction accuracy without ML models</li>
+                        <li>Geographic data requires proper latitude/longitude fields</li>
+                        <li>Large datasets may affect performance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 13: Future Scope -->
+    <section class="slide" id="slide-13">
+        <div class="slide-content">
+            <span class="slide-number">12</span>
+            <h2 class="slide-heading animate-item">Future Scope</h2>
+            <div class="content-grid">
+                <div class="content-card animate-item">
+                    <div class="card-icon">📡</div>
+                    <h3>Real-time Monitoring</h3>
+                    <p>Live accident detection with IoT sensors and GPS integration</p>
+                </div>
+                <div class="content-card animate-item">
+                    <div class="card-icon">🤖</div>
+                    <h3>ML Predictions</h3>
+                    <p>Train models to predict accident likelihood based on conditions</p>
+                </div>
+                <div class="content-card animate-item">
+                    <div class="card-icon">📱</div>
+                    <h3>Mobile App</h3>
+                    <p>Native mobile application for on-the-go analysis</p>
+                </div>
+                <div class="content-card animate-item">
+                    <div class="card-icon">🔔</div>
+                    <h3>AI Risk Alerts</h3>
+                    <p>Automated alerts for high-risk conditions and areas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 14: Conclusion -->
+    <section class="slide" id="slide-14">
+        <div class="slide-content">
+            <span class="slide-number">13</span>
+            <h2 class="slide-heading animate-item">Conclusion</h2>
+            <div class="text-block animate-item">
+                <div class="highlight-box success">
+                    <h3>✅ Key Takeaways</h3>
+                    <ul>
+                        <li>Successfully built a comprehensive accident analysis system</li>
+                        <li>Data cleaning and preprocessing ensure reliable insights</li>
+                        <li>Interactive visualizations make complex data accessible</li>
+                        <li>Map-based views highlight accident-prone zones effectively</li>
+                        <li>System supports data-driven road safety decision-making</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 15: Thank You -->
+    <section class="slide slide-title" id="slide-15">
+        <div class="bg-animation">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        <div class="slide-content">
+            <h1 class="hero-title animate-item">Thank You! 🙏</h1>
+            <p class="hero-sub animate-item">Traffic Accident Analysis System</p>
+            <div class="team-info animate-item">
+                <p>Questions? We'd love to hear from you.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

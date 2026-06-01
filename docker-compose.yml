@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_PORT=5000
+      - FLASK_DEBUG=false
+      - MAX_UPLOAD_MB=10
+    volumes:
+      - ./sample_accident_data.csv:/app/sample_accident_data.csv
+    restart: unless-stopped
